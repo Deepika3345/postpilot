@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>PostPilot</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="d-flex align-items-center w-full mx-2">
+        <div class="d-flex justify-content-between align-items-center w-100">
+          <div class="d-flex align-items-center">
+            <img
+              class="img-fluid"
+              src="assets/images/Postpilot logo.png"
+              alt="Your Company"
+            />
+          </div>
+
+          <button
+            class="navbar-toggler d-md-none"
+            type="button"
+            id="menu-toggle"
+            aria-label="Toggle navigation"
+          >
+            &#9776;
+          </button>
+
+          <div class="d-block" id="mobile-menu">
+            <ul class="d-flex gap-4 align-items-center float-end" id="nav-menu">
+              <!-- <li class="rounded px-3 py-2 text-sm font-medium">Resources
+
+                
+              </li> -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-md font-medium"
+                  href=""
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Resources
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="">Action</a></li>
+                  <li><a class="dropdown-item" href="">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="rounded px-3 py-2 text-md font-medium">
+                Success Stories
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-md font-medium"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Company
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="rounded px-3 py-2 text-md font-medium">Pricing</li>
+              <button class="w-20 border-x-2 h-11 login-btn rounded-xl text-lg">
+                Login
+              </button>
+              <button
+                class="w-auto border-x-2 border-dark h-11 login-btn rounded-xl p-2 text-white free-btn text-wrap"
+              >
+                Create free account
+              </button>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- SECTION-01 -->
+    <section class="sec-1 d-flex justify-content-between align-items-center">
+      <div
+        class="d-flex justify-content-between align-items-center position-relative w-100"
+      >
+        <!-- <div class="p-4"> -->
+        <div
+          class="text-section d-flex text-wrap justify-content-between flex-col"
+        >
+          <h1 class="mkt text-wrap">
+            Meet your <br /><span id="fav"> favourite </span>new (old) marketing
+            channel.
+          </h1>
+          <div class="d-flex flex-col justify-content-between">
+            <h5 class="res-01 text-wrap mt-3 mb-4">
+              Remarkable results. Easier than email.Postcard marketing <br />
+              reinvented for modern ecommerece.
+            </h5>
+            <span class="d-flex align-items-center">
+              <button
+                class="w-60 border-x-2 border-dark h-11 login-btn rounded-xl text-white free-btn text-wrap"
+              >
+                TRY IT RISK-FREE
+              </button>
+              <div class="d-flex flex-col ml-10 star-container">
+                <div class="star-rating">
+                  <span class="star" data-value="1">&#9733;</span>
+                  <span class="star" data-value="2">&#9733;</span>
+                  <span class="star" data-value="3">&#9733;</span>
+                  <span class="star" data-value="4">&#9733;</span>
+                  <span class="star" data-value="5">&#9733;</span>
+                </div>
+
+                <h6 id="rating-text">5.0 Shopify Rating</h6>
+              </div>
+            </span>
+          </div>
+          <!-- </div> -->
+        </div>
+        <div
+          class="image-section position-absolute top-0 bottom-0 right-0 d-flex justify-content-center align-items-center float-end"
+        >
+          <img
+            class="position-absolute z-0 img-1"
+            src="assets/images/s1-img-1.png"
+            alt="Image 1"
+          />
+          <img
+            class="position-absolute z-2 img-2"
+            src="assets/images/s1-img-2.png"
+            alt="Image 2"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION-02 -->
+    <section class="sec-2 p-5 d-flex justify-content-between flex-col">
+      <div class="d-flex justify-content-center text-center text-wrap">
+        <div class="w-[750px]">
+          <h1 class="brands">
+            Trusted by thousands of top DTC <span id="fav">brands.</span>
+          </h1>
+        </div>
+      </div>
+      <div class="card-container d-flex flex-row gap-5">
+        <div class="card border-0">
+          <img src="assets/images/rungum.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <p class="card-text d-flex justify-content-center">
+              <img src="assets/images/rungum-logo.png" alt="" />
+            </p>
+          </div>
+        </div>
+        <div class="card border-0">
+          <img
+            src="assets/images/beardbrand.png"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <p class="card-text d-flex justify-content-center">
+              <img src="assets/images/beardbrand-logo.png" alt="" />
+            </p>
+          </div>
+        </div>
+        <div class="card border-0">
+          <img src="assets/images/promix.png" class="card-img-top" alt="..." />
+          <div class="card-body text-center">
+            <p class="card-text d-flex justify-content-center">
+              <img src="assets/images/promix-logo.png" alt="" />
+            </p>
+          </div>
+        </div>
+        <div class="card border-0">
+          <img src="assets/images/porter.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <p class="card-text d-flex justify-content-center">
+              <img src="assets/images/porter-logo.png" alt="" />
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section -03 -->
+    <section class="sec-3">
+      <div class="d-flex justify-content-center text-center text-wrap">
+        <div class="direct-mail">
+        <h1 class="brands">
+          Why use direct mail? It <span id="fav">works</span> like crazy.
+        </h1>
+        </div>
+      </div>
+      <div class="card-container mt-5 sec-3-2">
+        <div class="card new-card border-0">
+          <div class="text-container">
+            <span id="dynamic-text">28X</span>
+          </div>
+
+          <div class="card-body card-new-body">
+            <p
+              class="card-text d-flex justify-content-center text-wrap text-center"
+            >
+              Higher response rate than email & digital
+            </p>
+          </div>
+        </div>
+
+        <div class="d-flex flex-col justify-content-between align-items-center">
+          <div class="chart-container">
+            <div class="bar" id="direct-mail-bar">
+              <span class="percentage" id="direct-mail-percentage">90%</span>
+              <span class="label">Direct mail</span>
+            </div>
+            <div class="bar" id="email-bar">
+              <span class="percentage" id="email-percentage">20%</span>
+              <span class="label">Email</span>
+            </div>
+          </div>
+          <p
+            class="card-text d-flex justify-content-center text-wrap text-center mt-4"
+          >
+            Your messages get read
+          </p>
+        </div>
+
+        <div class="card days border-0">
+          <div class="text-container-oneseven new-card">
+            <span id="dynamic-text-days">17 Days</span>
+          </div>
+          <div class="card-body card-new-body">
+            <p
+              class="card-text d-flex justify-content-center text-wrap text-center"
+            >
+              Lifespan of a postcard vs. <br />
+              seconds for email or SMS
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section 04 -->
+    <section class="sec-4 p-5">
+      <div class="d-flex justify-content-center align-items-center w-full">
+        <div class="text-data-one">
+          <h1 class="text-main-data">
+            PostPilot makes it a <span id="fav">cinch</span> to send
+            personalized, profit-generating postcards.
+          </h1>
+        </div>
+      </div>
+      <div class="d-flex flex-col">
+        <!-- first card -->
+        <div class="second-part w-full mt-9 mb-5">
+          <div
+            class="main-data d-flex justify-content-between flex-col card-data"
+          >
+            <h1 class="d-flex flex-col w-80">
+              <span id="fav"> Powerful</span>
+              <span class="second-part-hone"> acquisition & retention </span>
+            </h1>
+            <p class="postPilot-text">
+              Send one-off or triggered campaigns to customers & prospects.
+              Target email leads with MailMatch <sup>TM</sup>.
+            </p>
+
+            <div class="card">
+              <div class="card-text postpilot-card">
+                <p class="postpilot-card-text">
+                  It's like Klaviyo for direct mail. The results are absolutely
+                  insane.
+                </p>
+                <span
+                  class="d-flex justify-content-between flex-row align-items-center"
+                >
+                  <p class="postpilot-author">Ask Melwani, CMO</p>
+                  <img src="assets/images/obvi.png" class="w-12" alt="" />
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="text-data">
+            <img src="assets/images/talent-acquisition.png" alt="" />
+          </div>
+        </div>
+
+        <!-- second card -->
+        <div class="second-part w-full mt-5 mb-5">
+          <div class="text-data">
+            <img src="assets/images/talent-acquisition.png" alt="" />
+          </div>
+          <div class="d-flex justify-content-between flex-col main-data">
+            <h1 class="second-part-hone">
+              <span id="fav">Fight back </span>
+              <!-- <span class="second-part-hone" -->
+              against iOS updates, jacked-up CPCs & spam folders
+              <!-- </span> -->
+            </h1>
+            <p class="postPilot-text">
+              Deliver your message to all of your customers - for less than the
+              cost of a click.
+            </p>
+
+            <div class="card">
+              <div class="card-text postpilot-card">
+                <p class="postpilot-card-text">
+                  PostPilot is our new weapon against sinking email engagement
+                  and rising PPC costs.The results and ROI have been
+                  outstanding. It's now one of our core marketing channels to
+                  increase acquisition & LTV.
+                </p>
+                <span
+                  class="d-flex justify-content-between flex-row align-items-center"
+                >
+                  <p class="postpilot-author">Leah Keith,GM</p>
+                  <img src="assets/images/overlander.png" class="w-12" alt="" />
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- third card data -->
+
+        <div class="second-part w-full mt-5 mb-5">
+          <div class="d-flex justify-content-between flex-col main-data">
+            <!-- <h1 class="d-flex flex-col w-80"> -->
+            <h1 class="second-part-hone">Done for <span id="fav">you</span></h1>
+            <!-- <span class="second-part-hone">Done for</span> -->
+
+            <!-- </h1> -->
+            <p class="postPilot-text">
+              From design & strategy to stamp-licking, our ecom experts help you
+              every step of the way.
+            </p>
+
+            <div class="card">
+              <div class="card-text postpilot-card">
+                <p class="postpilot-card-text">
+                  The team is so knowledgeable and beyond helpful. I'm blown
+                  away by their communication ,detail ,and attentiveness and
+                  always feel like they have our best interset in mind .
+                  Definitely worth a try.
+                </p>
+                <span
+                  class="d-flex justify-content-between flex-row align-items-center"
+                >
+                  <p class="postpilot-author">
+                    Holly Davies,Marketing Director
+                  </p>
+                  <h6 class="text-bold">PARAGON</h6>
+                </span>
+              </div>
+            </div>
+            <button
+              class="w-60 border-x-2 border-dark h-11 login-btn rounded-xl text-white free-btn text-wrap"
+            >
+              TRY IT RISK-FREE
+            </button>
+          </div>
+          <div class="text-data">
+            <img src="assets/images/talent-acquisition.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section 05 -->
+    <section class="sec-5 w-100">
+      <div class="d-flex flex-col w-full">
+        <div class="text-data-one">
+          <h1 class="text-main-data">
+            Everything your brand need to
+            <span id="fav">make your brand unforgettable</span>
+          </h1>
+        </div>
+      </div>
+
+      <section class="features w-100">
+        <div
+          class="feature card-one d-flex justify-content-evenly align-items-center flex-col"
+        >
+          <!-- <span class="d-flex align-items-center justify-content-center"> -->
+          <img
+            src="assets/images/shopify img.png "
+            alt="Plug-and-Play"
+            class="w-100"
+          />
+          <!-- </span> -->
+          <h2 class="plug-text">Plug-and-play with your stack</h2>
+          <h6 class="plug-para">
+            Native integration provides seamless segmentation, automation &
+            tracking. No flexibility. No clunky spreadsheets.
+          </h6>
+        </div>
+        <div
+          class="feature card-two d-flex justify-content-evenly align-items-center flex-col"
+        >
+          <!-- <span class="d-flex align-items-center justify-content-center"> -->
+          <img
+            src="assets/images/Abandoned Cart.png"
+            alt="Run campaigns on autopilot"
+            class="w-100"
+          />
+          <!-- </span> -->
+          <h2 class="plug-text">Run campaigns on autopilot</h2>
+          <h6 class="plug-para">
+            Ink profits while you sleep: Just set it and forget it.
+          </h6>
+        </div>
+        <div
+          class="feature card-three d-flex justify-content-evenly align-items-center flex-col"
+        >
+          <img
+            src="assets/images/meter.png"
+            alt="Real-time ROI dashboard"
+            class="w-100"
+          />
+          <h2 class="plug-text">Real-time ROI dashboard</h2>
+          <h6 class="plug-para">
+            Track performance of every postcard by customer or discount
+            code.Your CFO will love it.
+          </h6>
+        </div>
+        <div
+          class="feature card-four d-flex justify-content-evenly align-items-center flex-col"
+        >
+          <img
+            src="assets/images/letter.png"
+            alt="Deliver WOW with handwritten cards"
+            class="w-100"
+          />
+          <h2 class="plug-text">Deliver WOW with *real* handwritten cards</h2>
+          <h6 class="plug-para">
+            Our proprietary robots use real pens and ink for an unforgettable
+            VIP touch.
+          </h6>
+        </div>
+        <div
+          class="feature card-five d-flex justify-content-evenly align-items-center flex-col"
+        >
+          <img
+            src="assets/images/stamp.png"
+            alt="Predictable pricing"
+            class="w-100"
+          />
+          <h2 class="plug-text">Predictable pricing</h2>
+          <h6 class="plug-para">
+            Unlike CPCs, postage rates don't change based on competition or who
+            you're targeting.
+          </h6>
+        </div>
+        <div
+          class="feature -six d-flex justify-content-evenly align-items-center flex-col"
+        >
+          <div class="d-flex flex-col w-full">
+            <div class="w-full h-auto border border-dark rounded rounded-4 m-1">
+              <div class="d-flex flex-row align-items-center p-2">
+                <img src="assets/images/color palette.png" alt="" class="" />
+                <h1 class="text-lg m-3">Design</h1>
+              </div>
+            </div>
+            <div class="w-full h-auto border border-dark rounded rounded-4 m-1">
+              <div class="d-flex flex-row align-items-center p-2">
+                <img src="assets/images/strategy2.jpeg" alt="" class="" />
+                <h1 class="text-lg m-3">Strategy</h1>
+              </div>
+            </div>
+            <div class="w-full h-auto border border-dark rounded rounded-4 m-1">
+              <div class="d-flex flex-row align-items-center p-2">
+                <img src="assets/images/implementation.png" alt="" class="" />
+                <h1 class="text-lg m-3">Implementation</h1>
+              </div>
+            </div>
+          </div>
+
+          <h2 class="plug-text">Complimentary concierge service</h2>
+          <h6 class="plug-para">
+            DIY is in our DNA. Our pros will build your strategy and and custom
+            designs using battle-tested best practices.
+          </h6>
+        </div>
+      </section>
+    </section>
+
+    <!-- section 06 -->
+    <section class="process sec-6">
+      <div class="d-flex justify-content-center align-items-center w-full">
+        <div class="text-data-one">
+          <h1 class="text-main-data">
+            Fast launch.Fast results. <br />
+            <span id="fav">Here's how.</span>
+          </h1>
+        </div>
+      </div>
+      <div class="process-content">
+        <div class="steps">
+          <div
+            class="step w-60 d-flex justify-content-between align-items-center"
+          >
+            <h3><span id="fav">01</span></h3>
+            <h3>Segment</h3>
+          </div>
+          <div
+            class="step w-60 d-flex justify-content-between align-items-center"
+          >
+            <h3><span id="fav">02</span></h3>
+            <h3>Design</h3>
+          </div>
+          <div
+            class="step active d-flex align-items-start justify-content-start"
+          >
+            <div>
+              <h3><span id="fav">03</span></h3>
+            </div>
+            <div class="d-flex flex-col">
+              <span class="fw-bold display-6">Send</span>
+              <p>
+                One-off announcements or automatically triggered flows.
+                Customers receive their personalized cards within a week.
+              </p>
+            </div>
+          </div>
+          <div
+            class="step w-60 d-flex justify-content-between align-items-center"
+          >
+            <h3><span id="fav">04</span></h3>
+            <h3>Convert</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- DTC sECTION section-07-->
+    <div class="sec-7">
+      <div class="d-flex flex-col w-full">
+        <div class="text-data-one">
+          <h1 class="text-main-data">
+            PostPilot is <span class="emoji">🔥</span> for
+            <span id="fav">DTC</span>
+          </h1>
+        </div>
+      </div>
+
+      <div class="testimonials">
+        <div class="testimonial-card">
+          <div class="card-header">
+            <img
+              src="assets/images/DTC1.png"
+              alt="User 1"
+              class="profile-img"
+            />
+            <div>
+              <p class="user-name">Helen Guo</p>
+              <p class="user-handle">@HelenGuo_</p>
+            </div>
+            <span class="twitter-icon"
+              ><img src="assets/images/Vector.png" alt=""
+            /></span>
+          </div>
+          <p class="testimonial-text">
+            I have been using PostPilot for years. Good for re-engagement. And
+            you can get creative with messaging.
+          </p>
+        </div>
+        <div class="testimonial-card">
+          <div class="card-header">
+            <img
+              src="assets/images/DTC1.png"
+              alt="User 1"
+              class="profile-img"
+            />
+            <div>
+              <p class="user-name">Helen Guo</p>
+              <p class="user-handle">@HelenGuo_</p>
+            </div>
+            <span class="twitter-icon"
+              ><img src="assets/images/Vector.png" alt=""
+            /></span>
+          </div>
+          <p class="testimonial-text">
+            I have been using PostPilot for years. Good for re-engagement. And
+            you can get creative with messaging.
+          </p>
+        </div>
+        <div class="testimonial-card">
+          <div class="card-header">
+            <img
+              src="assets/images/DTC1.png"
+              alt="User 1"
+              class="profile-img"
+            />
+            <div>
+              <p class="user-name">Helen Guo</p>
+              <p class="user-handle">@HelenGuo_</p>
+            </div>
+            <span class="twitter-icon"
+              ><img src="assets/images/Vector.png" alt=""
+            /></span>
+          </div>
+          <p class="testimonial-text">
+            I have been using PostPilot for years. Good for re-engagement. And
+            you can get creative with messaging.
+          </p>
+        </div>
+        <div class="testimonial-card">
+          <div class="card-header">
+            <img
+              src="assets/images/DTC2.png"
+              alt="User 2"
+              class="profile-img"
+            />
+            <div>
+              <p class="user-name">Nathan Woods</p>
+              <p class="user-handle">@HeisNathan</p>
+            </div>
+            <span class="twitter-icon">
+              <img src="assets/images/Vector.png" alt="" />
+            </span>
+          </div>
+          <p class="testimonial-text">
+            I’ve done some rad winbacks to 7 days since purchase that have
+            worked well. PostPilot team is one of my favs.
+          </p>
+        </div>
+        <div class="testimonial-card">
+          <div class="card-header">
+            <img
+              src="assets/images/DTC3.png"
+              alt="User 3"
+              class="profile-img"
+            />
+            <div>
+              <p class="user-name">Chris Lander</p>
+              <p class="user-handle">@chris_basis</p>
+            </div>
+            <span class="twitter-icon">
+              <img src="assets/images/Vector.png" alt="" />
+            </span>
+          </div>
+          <p class="testimonial-text">
+            +1 for PostPilot. Have only done a few campaigns, but it’s been
+            wonderful. Their support team is also top notch. Super helpful every
+            time we need to set something up.
+          </p>
+        </div>
+      </div>
+      <span class="d-flex justify-content-center align-items-center">
+        <button
+          class="free-btn-new w-[262px] mb-[95px] border-x-2 border-dark h-11 login-btn rounded-xl p-2 text-white text-wrap"
+        >
+          Try it for free
+        </button></span
+      >
+    </div>
+
+    <!-- Section-08 purple part-->
+    <div class="sec-8 w-full p-10">
+      <div class="sec-8-2">
+        <div class="sec-8-img">
+          <div
+            class="d-flex justify-content-center align-items-center obvi-good"
+          >
+            <img src="assets/images/obvi good.png" alt="" class="" />
+          </div>
+        </div>
+        <div class="sec-8-data d-flex flex-col">
+          <div
+            class="d-flex flex-col justify-content-center align-items-center"
+          >
+            <div class="highlight">
+              <h1>
+                How <span id="fav"> obvi </span> Drives Profits with Hands-Off
+                Postcard Campaigns
+              </h1>
+            </div>
+            <div class="highlight-two">
+              <div class="highlight-two-content">
+                <p class="supply">
+                  The 🛩️ supplements brand wanted to offset high ad costs and
+                  reach dormant customers. They scored 1000%+ ROIs.
+                </p>
+                <div class="d-flex justify-content-between my-4">
+                  <div>
+                    <p class="stats">1468%</p>
+                    <p>ROI</p>
+                  </div>
+                  <div>
+                    <p class="stats">8.59%</p>
+                    <p>Conversion Rate</p>
+                  </div>
+                  <div>
+                    <p class="stats">$73,457</p>
+                    <p>Sales Generated</p>
+                  </div>
+                </div>
+
+                <button
+                  class="w-60 border-x-2 border-dark h-11 login-btn rounded-xl text-dark free-btn text-wrap bg-body-tertiary"
+                >
+                  Read Case Study
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="d-flex flex-row w-100 sec8-logo">
+        <div class="w-1/2 sec-8-logo-left"></div>
+        <div
+          class="img-group d-flex justify-content-between align-items-center flex-row sec-8-logo-right"
+        >
+          <img src="assets/images/obvi.png" alt="" class="" />
+          <img src="assets/images/bulletproof.png" alt="" class="" />
+          <img src="assets/images/boomi.png" alt="" class="" />
+          <img src="assets/images/orbitbabe.png" alt="" class="" />
+        </div>
+      </div> -->
+    </div>
+
+    <!-- orange section sec-9 -->
+    <div class="sec-9">
+      <div class="orange-text">
+        <div
+          class="text-section d-flex text-wrap justify-content-between flex-col text-light"
+        >
+          <div class="try">
+            <h1 class="mkt text-wrap">Try PostPilot Risk-Free</h1>
+          </div>
+          <div class="d-flex flex-col justify-content-evenly com-section">
+            <h6>No Contracts. No commitments. Guaranteed results.*</h6>
+            <span class="d-flex align-items-center">
+              <button
+                class="w-60 border-x-2 border-dark h-11 login-btn rounded-xl text-dark free-btn text-wrap bg-body-tertiary"
+              >
+                GET STARTED
+              </button>
+              <div class="d-flex flex-col ml-10 star-container1">
+                <div class="star-rating">
+                  <span class="star1" data-value="1">&#9733;</span>
+                  <span class="star1" data-value="2">&#9733;</span>
+                  <span class="star1" data-value="3">&#9733;</span>
+                  <span class="star1" data-value="4">&#9733;</span>
+                  <span class="star1" data-value="5">&#9733;</span>
+                </div>
+
+                <h6 id="rating-text-new">5.0 Shopify Rating</h6>
+              </div>
+            </span>
+            <div>
+              <p class="revenue">
+                * for qualified brands with over $1m annual Shopify revenue.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="orange-img">
+        <img src="assets/images/paw.png" alt="" />
+      </div>
+    </div>
+
+    <!-- INSIGHT PAGE sec-10-->
+    <div class="container">
+      <div class="d-flex flex-col w-full">
+        <div class="text-data-one">
+          <h1 class="text-main-data">
+            Latest trends &
+            <span id="fav">insights</span>
+          </h1>
+        </div>
+      </div>
+      <div class="trends-section">
+        <div class="trend-card">
+          <img
+            src="assets/images/insight(1).png"
+            alt="3 Low-Cost Campaigns"
+            class="trend-image"
+          />
+          <p class="trend-title">
+            3 Low-Cost Campaigns You Must Run to Win BFCM
+          </p>
+        </div>
+        <div class="trend-card">
+          <img
+            src="assets/images/insight(2).png"
+            alt="Postcard Marketing Guide"
+            class="trend-image"
+          />
+          <p class="trend-title">
+            Postcard Marketing: The Definitive Guide to High ROI [2022]
+          </p>
+        </div>
+        <div class="trend-card">
+          <img
+            src="assets/images/insight3.png"
+            alt="Guide to Thank You Notes"
+            class="trend-image"
+          />
+          <p class="trend-title">
+            The Ultimate Guide to Thank You Notes for Ecommerce
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer section -->
+    <footer class="footer">
+      <div class="footer-one">
+        <div class="row align-items-center justify-content-around d-flex">
+          <div class="col-md-3 text-wrap text-md-left mb-3 mb-md-0">
+            <div class="eco-friendly">
+              <img
+                src="assets/images/eco-label..png"
+                alt="Eco Friendly Icon"
+                class="img-fluid mb-3"
+              />
+              <p class="paper-text">
+                Our paper is sourced from FSC-certified mills. We plant enough
+                trees to more than double our paper usage.
+              </p>
+            </div>
+          </div>
+          <!-- Company Column -->
+
+          <div class="col-md-2 mb-3 mb-md-0">
+            <h5 class="mb-3"><b>COMPANY</b></h5>
+            <ul class="list-unstyled">
+              <li>About us</li>
+              <li>Partner program</li>
+              <li>Career</li>
+              <li>Contact us</li>
+              <li>Privacy Policy</li>
+            </ul>
+          </div>
+          <div class="col-md-2 mb-3 mb-md-0">
+            <ul>
+              <li>Pricing</li>
+              <li>Reviews</li>
+              <li>Direct Mail Academy</li>
+              <li>Success stories</li>
+              <li>Terms & conditions</li>
+            </ul>
+          </div>
+        </div>
+        <!-- Contact Column -->
+        <div class="col-md-2 text-md-right">
+          <h5 class="mb-3"><b>CONTACT</b></h5>
+          <p>
+            <span class="d-flex align-items-center text-xs">
+              <img src="assets/images/Email.svg.png" alt="" />
+              <a href="mailto:support@postpilot.com">support@postpilot.com</a>
+            </span>
+          </p>
+          <p class="text-wrap footer-para">
+            <span class="footer-span">
+              <p class="text-sm">
+                Printed with ❤️ at our facility in South Carolina.
+              </p>
+            </span>
+          </p>
+        </div>
+      </div>
+
+      <!-- Bottom Section -->
+      <div class="footer-bottom">
+        <div class="flex-md-row bottom-one">
+          <div class="left mb-3 mb-md-0">
+            <div class="d-flex align-items-center">
+              <img
+                class="img-fluid"
+                src="assets/images/Postpilot logo.png"
+                alt="Your Company"
+              />
+            </div>
+            <p>© 2022 PostPilot, Inc. All rights reserved.</p>
+          </div>
+          <div class="right">
+            <button class="w-20 border-x-2 h-11 login-btn rounded-xl p-2">
+              Login
+            </button>
+            <button
+              class="w-auto border-x-2 border-dark h-11 login-btn rounded-xl p-2 text-white free-btn text-wrap"
+            >
+              Try it for free
+            </button>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
